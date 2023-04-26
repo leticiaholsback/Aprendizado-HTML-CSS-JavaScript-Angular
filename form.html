@@ -1,0 +1,25 @@
+<!-- tags de coleta de informaçao: < imput>especificar alguma coisa , 
+<select> criar listas de seleçaõ, multiplas ou individuais e <textarea> para um texto maior-->
+
+<html>
+    <head>
+        <style>
+        </style>
+    </head>
+
+    <body>
+        <form>
+            <h1> Opção de Pesquisa </h1>
+            <select multiple required> <!-- se tirar o multiple fica uma seleção normal-->
+                <option value="endereço"> Endereço:  </option>
+                <option value="fone"> Telefone:  </option>
+                <option value="email"> E-mail:  </option>
+                <option value="razao"> Razão Social:  </option>
+            </select>
+
+        <h1> Cometários sobre:</h1>
+        <textarea rows="5" cols="20" maxlength="100" readonly> Texto fonecido pelo cliente</textarea>   
+    <!-- se tirar o readonly, pode ser digitado pelo usuario na caixa até 100 carac. com ele fica apenas leitura-->   
+    </form>
+    </body>
+</html>    
