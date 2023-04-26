@@ -1,0 +1,64 @@
+<!-- graficos e desenhos. acompanhamento <progress> <meter>
+    desenho vetorial <svg>
+        desenho bitmap <canvas> (desenhar pixel por pixel)
+    formas: <circle> <ellipse> <rect> < line> <polyline> <polygon>
+    <img> para arq externos      -->
+<html>
+    <head>
+        <style>
+            img{
+                width: 500px;
+                height: 300px;
+                top: 50px;
+                left: 200px;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <label for="projeto">Ativ</label>
+        <meter id="projeto" value="6" min="0" max="10"></meter><br>
+
+        <br>
+        <label for="cadastro">Preenchido: </label>
+        <progress id="cadastro" value="6" max="10"></progress>
+
+<!-- width e height largura e altura
+fill cor do preenchimento
+x e y posição do elemento
+stroke cor da linha do contorno
+stroke-width grossura da linha do contorno
+r indica o raio do  circulo
+cx e cy posicionam o circulo
+rx e ry posicionam a elipse-->       
+        <br>
+        <svg width="100" height="100">
+            <circle cx="50" cy="50" r="40" stroke="black" stroke-widt="20" fill="orange"/>
+        </svg>
+
+        <br>
+        <svg width="400" height="200">
+            <ellipse cx="100" cy="100" rx="90" ry="50" stroke="black" stroke-widt="60" fill="yellow"/>
+        </svg>
+
+        <br>
+        <svg>
+            <rect  width= "100" height="50" x="40" y="80" stroke="blue" stroke-widt="80" fill="pink"/>
+        </svg>   
+        
+        <br>
+        <canvas id="desenho" width="200" height="100" style="border: 2px dashed green;">
+        <script>
+        var area= document.getElementById("desenho");
+        var des= area.getContext("2d");
+        des.beginPath();
+        des.arc(95,50,30, .1 * Math.PI, 1.8 * Math.PI);
+        des.stroke();
+        des.font="20px Arial";
+        des.fillText("WEB", 100, 55);
+        </script>
+        </canvas>
+
+     </body>
+</html>
