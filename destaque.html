@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <style>
+            p {
+                border-radius: 20px;
+                box-shadow: 10px 10px 15px gray;
+                background-color: aqua;
+                position: absolute;
+                padding: 10px;
+                top: 50px;
+                left: 50px;
+                width: 150px;
+                height: 100px;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+            }
+
+            p:hover{
+                border: 10px solid rgb(228, 217, 62);
+                -webkit-transform: rotateZ(360deg);
+                transform: rotateZ('360deg');
+                box-shadow: 0 5px 15px red;
+                transition: transform 8s;
+            }
+                
+            
+            h1:hover{
+                box-shadow: 10px 10px 15px burlywood;
+                transform: translate(-.1rem, -1rem) rotate (1deg);
+                transition: transform .5s;
+                -webkit-transform: scale(1.5);
+            }
+        </style>
+    </head>
+    <body>
+        <br>
+        <h1> Aprendendo <3</h1>
+        <p> Leticia ... sem o -webkit-transform não girou. antes tinha posto  só o transform rotation mas nao deu certo</p>
+    </body>
+</html>
